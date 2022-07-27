@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 
 const Hero = () => {
   const linksContainerRef = useRef(null);
@@ -13,10 +13,13 @@ const Hero = () => {
   return (
     <div className="hero-section" ref={linksContainerRef}>
       <div className="hero-content" ref={linksRef}>
-        <div className="hero-">
+        <div className="hero-text">
           <h1>Hi, I'm Sameera</h1>
+          <p>I'm a web developer based in New Zealand.</p>
         </div>
-        <div className="hero-image"></div>
+        <div className="hero-image">
+          <img src="/images/hero.svg" alt="" />
+        </div>
       </div>
     </div>
   );

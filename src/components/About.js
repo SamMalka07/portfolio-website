@@ -56,16 +56,17 @@ const About = () => {
   return (
     <div id="about">
       <div className="page-section">
-        <div>
+        <div className="page-inner">
           <div className="about-section">
             <div className="about-section-inner">
               <h1 className="section-header white-txt">About Me</h1>
               <p className="white-txt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                quis neque in felis lobortis luctus vitae eget lorem. Mauris at
-                purus posuere nisl faucibus convallis. Integer at mauris nec
-                turpis semper hendrerit. Cras imperdiet tellus at hendrerit
-                tempor. Sed sed turpis quis mi pellentesque facilisis
+                Self motivated Web developer with a Bachelor degrees in
+                Information Technology and Graduate diploma in Information
+                Technology (Level 7). <br />
+                My main ambition is to become a Full Stack Web Developer. My
+                passion for programming inspire me to learn new programming
+                languages, frameworks, etc. in my spare time.
               </p>
             </div>
           </div>
