@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <Link smooth to="#home">
+          <Link to="home" smooth={true} duration={1000}>
             Logo
           </Link>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./portfolio.css";
 import Project from "./Project";
+import { useInView } from "react-intersection-observer";
 
 const projects = [
   {
@@ -66,15 +67,18 @@ const projects = [
 
 const Portfolio = () => {
   const [readMore, setReadMore] = useState(false);
+  const { ref, inView } = useInView();
 
   return (
     <div id="portfolio">
-      <div className="page-section">
+      <div className="page-section" ref={ref}>
         <div className="page-wrapper">
           <h1 className="section-header white-txt">Portfolio</h1>
-          <div className="portfolio-section">
-            {projects.map((project) => (
-              <Project key={project.title} project={project} />
+          <div
+            className={`portfolio-section ${inView ? "portfolio-fade" : ""}`}
+          >
+            {projects.map((project, index) => (
+              <Project key={index} project={project} />
             ))}
           </div>
         </div>

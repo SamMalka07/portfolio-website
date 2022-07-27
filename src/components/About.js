@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "./About.css";
+import { useInView } from "react-intersection-observer";
 
 const stack = [
   {
@@ -53,9 +54,11 @@ const stack = [
 ];
 
 const About = () => {
+  const { ref, inView } = useInView();
+
   return (
     <div id="about">
-      <div className="page-section">
+      <div className="page-section" ref={ref}>
         <div className="page-inner">
           <div className="about-section">
             <div className="about-section-inner">
@@ -77,7 +80,11 @@ const About = () => {
                 const { name, img } = item;
                 return (
                   <div key={name} className="single-item">
-                    <img src={img} alt="" />
+                    <img
+                      src={img}
+                      alt={name}
+                      className={`${inView ? "fade-in" : ""}`}
+                    />
                     <p>{name}</p>
                   </div>
                 );

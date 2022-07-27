@@ -10,7 +10,7 @@
   --blue:#67e8f9;
   --blue-light-1:#a5f3fc;
   --blue-light-2:#ecfeff;
-  --mind-dark-gray:#949db8;
+  --mind-dark-gray:#d1d5e0;
   /*Texts*/
   --clr-texts-1:#f9fafb
 
@@ -21,6 +21,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Sora', sans-serif;
+  letter-spacing: 0.2px;
 }
 
 html, body{
@@ -143,6 +144,7 @@ Pages
 
 .section-header{
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .white-txt{
@@ -165,7 +167,7 @@ Hero Section
 
 .hero-section{
   width: 70%;
-  margin: 0px auto;
+  margin: 30px auto;
   height: calc(100vh - 50px) !important;
   margin-bottom: 0;
   display: flex;
@@ -191,6 +193,10 @@ Hero Section
 
 .hero-image img{
   object-fit: cover;
+}
+
+.hero-intro{
+  color: var(--blue-light-2);
 }
 
 /*
@@ -298,8 +304,104 @@ Project
 
 
 
+/*
+=======
+Contact
+=======
+*/
 
 
+.contact-section{
+  width: 60%;
+  margin: 100px auto;
+}
+
+#contacts .page-section{
+  padding-top: 0px !important;
+}
+
+.contact-section p{
+  color: var(--mind-dark-gray);
+}
+
+.contact-details{
+  margin-top: 30px;
+  color: var(--blue-light-1);
+}
+
+.contact-details div{
+  margin-top: 5px;
+}
+
+.contact-details div a{
+  text-decoration: none;
+  color: var(--blue-light-1);
+}
+
+
+.slide-fadein{
+  animation-duration: 2s;
+  animation-name: slide-fade-items;
+  
+}
+
+@keyframes slide-fade-items {
+  0%{
+    transform: translateX(15%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+
+.fade-in {
+  animation-duration: 3s;
+  animation-name: fade-items;
+}
+
+@keyframes fade-items {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.portfolio-fade{
+  animation-duration: 3s;
+  animation-name: portfolio-fade;
+}
+
+.portfolio-fade .single-project:nth-child(1) {
+  animation-delay: 1s
+}
+
+.portfolio-fade .single-project:nth-child(2) {
+  animation-delay: 3s
+}
+
+.portfolio-fade .single-project:nth-child(3) {
+  animation-delay: 5s
+}
+
+
+@keyframes portfolio-fade {
+  0%{
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 
 
 
