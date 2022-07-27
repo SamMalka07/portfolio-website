@@ -5,14 +5,6 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const Contact = () => {
-  const {
-    register,
-    formState: { error },
-    handleSubmit,
-  } = useForm(null);
-
-  const onSubmit = () => {};
-
   return (
     <div id="contacts">
       <div className="page-section">
