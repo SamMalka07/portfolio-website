@@ -41,6 +41,7 @@ nav{
   top: 0;
   height: 70px;
   font-size: 0.9rem;
+  z-index: 100;
 }
 
 nav .nav-center{
@@ -60,6 +61,12 @@ nav, .nav-center, .nav-center a, .nav-links, .nav-header{
 nav .nav-center a{
   text-decoration: none;
   margin: 0px 15px;
+}
+
+.nav-header{
+  width: 100%;
+  display: flex;
+    justify-content: space-between;
 }
 
 .nav-links{
@@ -128,6 +135,48 @@ nav .nav-center a{
   background-color: transparent;
   color: white !important;
   padding-left: 2px; 
+}
+
+.nav-toggle {
+  display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  nav .nav-center{
+    width: 100%;
+  }
+
+  .nav-header{
+    padding: 0px 20px;
+  }
+
+  .nav-toggle{
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    
+  }
+
+  .nav-links.active{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    padding-bottom: 30px;
+    transition: all 2s;
+  }
+
+    .nav-links a::after {
+      background-color: transparent;
+    }
+
+  .nav-links.active a{
+    padding: 20px 0px;
+  }
 }
 
 
@@ -199,6 +248,26 @@ Hero Section
   color: var(--blue-light-2);
 }
 
+@media screen and (max-width:800px){
+  .hero-section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:520px) {
+  .hero-content {
+    flex-direction: column-reverse;
+  }
+    .hero-image {
+      width: 90%;
+    }
+
+    .hero-text {
+      margin-top: 30px;
+      width: 80%;
+    }
+}
+
 /*
 =======
 About
@@ -217,7 +286,7 @@ About
 }
 
 .about-section-inner {
-  width: 60%;
+  width: 70%;
   margin: 0px auto;
 }
 
@@ -231,7 +300,7 @@ About
   width: 50%;
   margin: 20px auto;
   border-radius: 10px;
-  margin-top: -175px;
+  margin-top: -150px;
   padding: 20px;
 }
 
@@ -249,6 +318,17 @@ About
 .stack-imgs img {
   width: 75px;
   height: 75px;
+}
+
+@media screen and (max-width:800px) {
+  .about-section-inner{
+    width: 98%;
+  }
+
+  .stack-content{
+    width: 90%;
+    margin-top: -100px;
+  }
 }
 
 
@@ -281,6 +361,18 @@ Project
   width: 100%;
 }
 
+@media screen and (max-width:800px) {
+  .portfolio-section {justify-content: center;}
+  .single-project {width: 60%;  margin-top: 30px;}
+}
+
+@media screen and (max-width:520px) {
+
+  .single-project {
+    width: 90%;
+    margin-top: 30px;
+  }
+}
 
 /*
 =======
@@ -301,6 +393,8 @@ Project
   justify-content: center;
   margin-top: 20px;
 }
+
+
 
 
 

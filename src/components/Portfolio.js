@@ -67,7 +67,7 @@ const projects = [
 
 const Portfolio = () => {
   const [readMore, setReadMore] = useState(false);
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
     <div id="portfolio">

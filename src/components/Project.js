@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 
 const Project = ({ project }) => {
   const { title, description, languages } = project;
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({ triggerOnce: true });
 
   const [readMore, setReadMore] = useState(false);
 
