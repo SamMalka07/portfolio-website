@@ -61,8 +61,8 @@ const projects = [
     image: "/images/projects/todo.png",
     links: [
       {
-        website: "https://www.google.com/",
-        github: "https://github.com/",
+        website: "https://malkasam-todo.netlify.app/",
+        github: "https://github.com/SamMalka07/todo-app",
       },
     ],
     languages: [
