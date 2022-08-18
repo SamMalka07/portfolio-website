@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import "./About.css";
 import { useInView } from "react-intersection-observer";
 
 const stack = [
@@ -64,8 +63,8 @@ const About = () => {
             <div className="about-section-inner">
               <h1 className="section-header white-txt">About Me</h1>
               <p className="white-txt">
-                Self motivated Web developer with a Bachelor degrees in
-                Information Technology and Graduate diploma in Information
+                Self motivated web developer with a Bachelor degrees in
+                Information Technology and Graduate Diploma in Information
                 Technology (Level 7). <br />
                 My main ambition is to become a Full Stack Web Developer. My
                 passion for programming inspire me to learn new programming

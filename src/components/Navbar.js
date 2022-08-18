@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <Link to="home" smooth={true} duration={1000}>
-            Logo
+            <img src="/images/logo.png" alt="" />
           </Link>
           <button
             ref={btnRef}
@@ -61,10 +61,10 @@ const Navbar = () => {
             Contact
           </Link>
 
-          <button className="resume-btn">
+          {/* <button className="resume-btn">
             <span>Resume</span>
             <MdDownload className="download-icon" />
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>

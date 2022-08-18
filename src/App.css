@@ -246,6 +246,7 @@ Hero Section
 
 .hero-intro{
   color: var(--blue-light-2);
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width:800px){
@@ -288,6 +289,7 @@ About
 .about-section-inner {
   width: 70%;
   margin: 0px auto;
+  margin-bottom: 20px;
 }
 
 .page-inner{
@@ -350,15 +352,70 @@ Project
 
 .single-project {
   width: 30%;
-  padding: 10px;
+  padding: 20px 10px;
   background-color: white;
-  height: 500px;
+  height: 700px;
   border-radius: 20px;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.7);
+  
+}
+
+.single-project-wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.bbb{
+  height: 100%; 
+  width: 100%;
+  display: flex;
+  align-items: flex-end; 
+  justify-items: center;
+}
+
+.project-links{
+  width: 100%;
 }
 
 .page-wrapper{
   width: 100%;
+}
+
+.project-lang img{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.project-links input{
+  padding: 7px 15px;
+    border-radius: 10px;
+    color: white;
+    margin: 0px 15px;
+    background: #4568DC;
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    border: transparent;
+    transition: background 0.3s ease-in;
+    margin-top: 10px;
+    min-width: 100px;
+}
+
+.project-links input:hover {
+  cursor: pointer;
+  background: #B06AB3;
+  background: -webkit-linear-gradient(to right, #4568DC, #B06AB3);
+  background: linear-gradient(to right, #4568DC, #B06AB3);
+  transition: background 0.3s ease-in;
+}
+
+.project-image{
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width:800px) {
@@ -386,12 +443,13 @@ Project
   padding-left: 5px;
   color: var(--blue);
   font-style: italic;
+  cursor: pointer;
 }
 
 .project-lang{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 
